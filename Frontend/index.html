@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <title>To Do List</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <h1>✧༺♥༻∞To-Do List✧༺♥༻∞</h1>
+            <div class="progress">
+                <div class="progress-bar" style="width: 33%;"></div>
+            </div>
+            <p><span class="completed">1</span> of <span class="total">3</span> tasks completed</p>
+        </header>
+
+        <!-- Task Input Section -->
+        <section class="task-input">
+            <input type="text" placeholder="Add a new task..." id="new-task">
+            <button id="add-task" aria-label="Add Task"><i class="fa-solid fa-plus"></i></button>
+        </section>
+
+        <!-- Task List Section -->
+        <section class="task-list">
+            <!-- Example Task -->
+            <div class="task">
+                <input type="checkbox" class="task-checkbox">
+                <input type="text" value="Complete the project" readonly class="task-text">
+                <div class="actions">
+                    <button class="edit" aria-label="Edit Task"><i class="fa-solid fa-pen-to-square"></i></button>
+                    <button class="delete" aria-label="Delete Task"><i class="fa-solid fa-trash"></i></button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
